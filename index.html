@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body
+    class="flex flex-col bg-gray-900 items-center text-white justify-center min-h-screen"
+  >
+    <div
+      class="bg-gray-800 p-6 rounded-2xl shadow-2xl w-80 text-center hover:shadow-blue-700 duration-500"
+    >
+      <h1 class="text-2xl font-semibold mb-5">
+        Music Player <i class="fa-solid fa-music"></i>
+      </h1>
+      <div id="disc" class="text-9xl transition-all duration-500">💿</div>
+      <h2 id="title" class="text-lg font-semibold mt-5">Song Title</h2>
+
+      <audio id="audio"></audio>
+
+      <div class="w-full bg-gray-700 h-2 rounded-full mt-4">
+        <div id="progress" class="bg-blue-500 h-2 rounded-full w-0"></div>
+      </div>
+
+      <div class="mt-8 flex gap-8 justify-center">
+        <button
+          id="previous"
+          class="text-2xl p-1 rounded-lg shadow-2xl duration-300 hover:text-blue-500"
+        >
+          <i class="fa-solid fa-backward-fast"></i>
+        </button>
+        <button
+          id="play"
+          class="text-2xl p-1 rounded-lg shadow-2xl duration-300 hover:text-blue-500"
+        >
+          <i class="fa-regular fa-circle-play"></i>
+        </button>
+        <button
+          id="next"
+          class="text-2xl p-1 rounded-lg shadow-2xl duration-300 hover:text-blue-500"
+        >
+          <i class="fa-solid fa-forward-fast"></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
