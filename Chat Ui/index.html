@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nova Chat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-slate-950 h-screen flex items-center justify-center">
+    <div
+      class="w-full max-w-md h-[90vh] bg-slate-900 rounded-xl shadow-lg flex flex-col overflow-hidden"
+    >
+      <header class="flex items-center gap-4 px-4 py-3 bg-slate-800">
+        <div
+          class="w-10 h-10 rounded-full bg-indigo-500 flex items-center justify-center font-bold"
+        >
+          T
+        </div>
+        <div class="flex-1">
+          <h2 class="font-semibold text-slate-100">Tech Team</h2>
+          <p class="text-xs text-slate-400">online</p>
+        </div>
+        <span class="text-slate-400">⋮</span>
+      </header>
+
+      <section class="flex-1 px-4 py-4 space-y-3 overflow-y-auto bg-slate-950">
+        <div class="flex">
+          <div
+            class="bg-slate-800 text-slate-200 px-4 py-2 rounded-2xl max-w-[75%]"
+          >
+            <p class="text-sm">Hey team, is the meeting confirmed for 10 AM?</p>
+            <span class="text-[10px] text-slate-400 block text-right mt-1">
+              9:45 AM
+            </span>
+          </div>
+        </div>
+
+        <div class="flex justify-end">
+          <div
+            class="bg-indigo-600 text-white px-4 py-2 rounded-2xl max-w-[75%]"
+          >
+            <p class="text-sm">Yes, confirmed. I’ll join on time</p>
+            <span class="text-[10px] text-indigo-200 block text-right mt-1">
+              9:46 AM ✓✓
+            </span>
+          </div>
+        </div>
+
+        <div class="flex">
+          <div
+            class="bg-slate-800 text-slate-200 px-4 py-2 rounded-2xl max-w-[75%]"
+          >
+            <p class="text-sm">Have you reviewed the pull request?</p>
+            <span class="text-[10px] text-slate-400 block text-right mt-1">
+              9:47 AM
+            </span>
+          </div>
+        </div>
+
+        <div class="flex justify-end">
+          <div
+            class="bg-indigo-600 text-white px-4 py-2 rounded-2xl max-w-[75%]"
+          >
+            <p class="text-sm">Almost done, will finish it in 5 minutes</p>
+            <span class="text-[10px] text-indigo-200 block text-right mt-1">
+              9:48 AM ✓✓
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <footer class="bg-slate-800 px-3 py-3">
+        <div class="flex items-center gap-2">
+          <input
+            type="text"
+            placeholder="Type a message"
+            class="flex-1 bg-slate-700 text-slate-200 px-4 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          />
+          <button class="bg-indigo-600 text-white px-4 py-2 rounded-full">
+            ➤
+          </button>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
